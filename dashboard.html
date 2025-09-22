@@ -16,15 +16,15 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="dashboard.html" class="active">Dashboard</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="kanban.html">Kanban Board</a></li>
-                    <li><a href="budget.html">Budget Tracker</a></li>
-                    <li><a href="calendar.html">Calendar</a></li>
-                    <li><a href="documents.html">Documents</a></li>
+                    <li><a href="#" onclick="showUnderConstruction()">Projects</a></li>
+                    <li><a href="#" onclick="showUnderConstruction()">Kanban Board</a></li>
+                    <li><a href="#" onclick="showUnderConstruction()">Budget Tracker</a></li>
+                    <li><a href="#" onclick="showUnderConstruction()">Calendar</a></li>
+                    <li><a href="#" onclick="showUnderConstruction()">Documents</a></li>
                 </ul>
             </nav>
             <div class="user-menu">
-                <button class="btn-secondary">+ New Project</button>
+                <button class="btn-secondary" onclick="showUnderConstruction()">+ New Project</button>
                 <div class="user-avatar">AF</div>
             </div>
         </div>
@@ -64,8 +64,8 @@
                                 </div>
                             </div>
                             <div class="project-actions">
-                                <button class="btn-link">View Epic Board</button>
-                                <button class="btn-link">Update Status</button>
+                                <button class="btn-link" onclick="showUnderConstruction()">View Epic Board</button>
+                                <button class="btn-link" onclick="showUnderConstruction()">Update Status</button>
                             </div>
                         </div>
 
@@ -92,8 +92,8 @@
                                 </div>
                             </div>
                             <div class="project-actions">
-                                <button class="btn-link">View Epic Board</button>
-                                <button class="btn-link">Add Tasks</button>
+                                <button class="btn-link" onclick="showUnderConstruction()">View Epic Board</button>
+                                <button class="btn-link" onclick="showUnderConstruction()">Add Tasks</button>
                             </div>
                         </div>
 
@@ -120,8 +120,8 @@
                                 </div>
                             </div>
                             <div class="project-actions">
-                                <button class="btn-link">View Epic Board</button>
-                                <button class="btn-link">Contact Inspector</button>
+                                <button class="btn-link" onclick="showUnderConstruction()">View Epic Board</button>
+                                <button class="btn-link" onclick="showUnderConstruction()">Contact Inspector</button>
                             </div>
                         </div>
                     </div>
@@ -211,7 +211,11 @@
         </div>
     </main>
 
-    <style>
+    <script>
+        function showUnderConstruction() {
+            alert('🚧 Under Construction 🚧\n\nThis feature is currently being developed. Check back soon!\n\nFor now, you can explore the landing page, about, and contact sections.');
+        }
+    </script>
         /* Additional dashboard-specific styles */
         .activity-list {
             list-style: none;
