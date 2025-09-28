@@ -353,11 +353,16 @@ h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
 /* App header with navigation */
 .app-header {
     background: var(--surface);
+    background-image: url('subtle-banner.svg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
     border-bottom: 1px solid var(--border);
     padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: var(--shadow-sm);
 }
 
 .header-container {
